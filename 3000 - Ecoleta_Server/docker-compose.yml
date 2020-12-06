@@ -6,7 +6,7 @@ services:
     image: marconwillian/ecoleta:latest
     ports: 
       - '3000:3000'
-    command: ["node", "dist/server.js"]
+    command: ["node", "dist/src/server.js"]
     environment:
       - NODE_ENV=production
     env_file:
