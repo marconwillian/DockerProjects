@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  ecoleta-server:
+    container_name: ecoleta-server
+    image: marconwillian/ecoleta:develop
+    ports: 
+      - '3000:3000'
+    command: ["node", "dist/server.js"]
+    environment:
+      - NODE_ENV=production
+    env_file:
+      - ../.production.env
