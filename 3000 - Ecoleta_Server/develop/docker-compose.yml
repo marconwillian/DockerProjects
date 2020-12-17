@@ -1,8 +1,8 @@
 version: '3'
 
 services:
-  ecoleta-server:
-    container_name: ecoleta-server
+  ecoleta-server-develop:
+    container_name: ecoleta-server-develop
     image: marconwillian/ecoleta:develop
     ports:
       - '3101:3000'
