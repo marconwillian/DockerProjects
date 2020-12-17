@@ -3,7 +3,7 @@ version: '3'
 services:
   ecoleta-server:
     container_name: ecoleta-server
-    image: marconwillian/ecoleta:0.3.3
+    image: marconwillian/ecoleta:latest
     ports: 
       - '3001:3000'
     command: ["node", "dist/server.js"]
