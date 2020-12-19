@@ -1,8 +1,8 @@
 [
   {
     "id": "ecoleta",
-    "execute-command": "bash ~/DockerProjects/3000-Ecoleta_Server/redeploy.sh",
-    "command-working-directory": "~/DockerProjects/3000-Ecoleta_Server/",
+    "execute-command": "/home/ubuntu/DockerProjects/3000-Ecoleta_Server/redeploy.sh",
+    "command-working-directory": "/home/ubuntu/DockerProjects/3000-Ecoleta_Server/",
     "response-message": "Redeploying API server Ecoleta."
   }
 ]
