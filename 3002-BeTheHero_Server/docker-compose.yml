@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  bethehero-server:
+    container_name: bethehero-server
+    image: marconwillian/bethehero:latest
+    ports: 
+      - '3002:3000'
+    command: ["node", "src/server.js"]
+    environment:
+      - NODE_ENV=production
+      - HOST=server-bethehero.marconwillian.dev
+    env_file:
+      - .production.env
