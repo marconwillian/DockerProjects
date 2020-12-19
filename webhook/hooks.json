@@ -4,5 +4,11 @@
     "execute-command": "/home/ubuntu/DockerProjects/3000-Ecoleta_Server/redeploy.sh",
     "command-working-directory": "/home/ubuntu/DockerProjects/3000-Ecoleta_Server/",
     "response-message": "Redeploying API server Ecoleta."
+  },
+  {
+    "id": "ecoleta-develop",
+    "execute-command": "/home/ubuntu/DockerProjects/3000-Ecoleta_Server/develop/redeploy.sh",
+    "command-working-directory": "/home/ubuntu/DockerProjects/3000-Ecoleta_Server/develop/",
+    "response-message": "Redeploying API server Ecoleta Develop."
   }
 ]
