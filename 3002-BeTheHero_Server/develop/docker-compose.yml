@@ -5,7 +5,7 @@ services:
     container_name: bethehero-server-develop
     image: marconwillian/bethehero:develop
     ports:
-      - '3101:3000'
+      - '3102:3000'
     command: ["node", "dist/server.js"]
     environment:
       - NODE_ENV=production
