@@ -9,6 +9,6 @@ services:
     command: ["node", "dist/server.js"]
     environment:
       - NODE_ENV=production
-      - HOST=server-ecoleta.marconwillian.dev
+      - HOST=https://server-ecoleta.marconwillian.dev
     env_file:
       - .production.env
