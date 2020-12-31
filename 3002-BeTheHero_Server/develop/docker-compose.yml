@@ -8,7 +8,7 @@ services:
       - '3102:3000'
     command: ["yarn", "start"]
     environment:
-      - NODE_ENV=production
+      - NODE_ENV=development
       - HOST=server-bethehero.marconwillian.dev:8080
     env_file:
       - ../.production.env
