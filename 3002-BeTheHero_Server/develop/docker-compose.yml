@@ -6,7 +6,7 @@ services:
     image: marconwillian/bethehero:develop
     ports:
       - '3102:3000'
-    command: ["node", "src/server.js"]
+    command: ["yarn", "start"]
     environment:
       - NODE_ENV=production
       - HOST=server-bethehero.marconwillian.dev:8080
