@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  proffy-server:
+    container_name: proffy-server
+    image: marconwillian/proffy:latest
+    ports: 
+      - '3003:3000'
+    command: ["yarn", "start"]
+    environment:
+      - NODE_ENV=production
+      - HOST=server-proffy.marconwillian.dev
+    env_file:
+      - .production.env
