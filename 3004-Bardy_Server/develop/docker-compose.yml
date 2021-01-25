@@ -7,7 +7,7 @@ services:
       - bardy-redis
     image: marconwillian/bardy-socket_notification:develop
     ports: 
-      - '3003:3000'
+      - '3104:3000'
     command: ["yarn", "start"]
     environment:
       - NODE_ENV=production
