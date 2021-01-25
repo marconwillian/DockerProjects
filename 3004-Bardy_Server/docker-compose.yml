@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  bardy-server:
+    container_name: bardy-server
+    links:
+      - bardy-redis
+    image: marconwillian/bardy-socket_notification:latest
+    ports: 
+      - '3003:3000'
+    command: ["yarn", "start"]
+    environment:
+      - NODE_ENV=production
+      - HOST=bardy.mh4sh.dev
+      - REDIS_URL=redis://bardy-redis
+
+  bardy-redis:
+    image: redis
+    container_name: bardy-redis
+    expose:
+      - 6379
