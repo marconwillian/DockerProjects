@@ -1,14 +1,15 @@
 version: '3'
 
 services:
-  proffy-server-develop:
-    container_name: proffy-server-develop
-    image: marconwillian/proffy:develop
-    ports:
-      - '3103:3000'
+  bardy-server-develop:
+    container_name: bardy-server-develop
+    links:
+      - bardy-redis
+    image: marconwillian/bardy-socket_notification:develop
+    ports: 
+      - '3003:3000'
     command: ["yarn", "start"]
     environment:
-      - NODE_ENV=development
-      - HOST=server-proffy.marconwillian.dev:8080
-    env_file:
-      - ../.production.env
+      - NODE_ENV=production
+      - HOST=bardy.mh4sh.dev
+      - REDIS_URL=redis://bardy-redis
