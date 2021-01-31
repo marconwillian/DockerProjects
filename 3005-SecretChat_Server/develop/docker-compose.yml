@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  secret-chat-server-develop:
+    container_name: secret-chat-server-develop
+    links:
+      - secret-chat-redis
+    image: mh4sh/chatsecret-server:latest
+    ports: 
+      - '3105:3000'
+    command: ["yarn", "start"]
+    environment:
+      - NODE_ENV=production
+      - HOST=bardy.mh4sh.dev
+      - REDIS_URL=redis://secret-chat-redis
