@@ -13,3 +13,6 @@ services:
       - NODE_ENV=production
       - HOST=bardy.mh4sh.dev
       - REDIS_URL=redis://secret-chat-redis
+
+    env_file:
+      - ../.production.env
